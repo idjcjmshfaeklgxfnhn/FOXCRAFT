@@ -1,1 +1,77 @@
-FOXCRAFT
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Foxcraft Minecraft Server</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; color: #3e2723; margin: 0; padding: 0;">
+
+    <!-- Popup ved innlasting -->
+    <div id="popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; z-index: 1000;">
+        <p style="font-size: 1.5em; margin: 0 20px;">Velkommen til Foxcraft!</p>
+        <p style="margin: 20px 20px; font-size: 1.2em;">Godta reglene våre for å fortsette. Klikk "Godta" for å starte reisen.</p>
+        <button onclick="document.getElementById('popup').style.display='none';" style="background-color: #8d6e63; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 1em; cursor: pointer;">
+            Godta
+        </button>
+    </div>
+
+    <!-- Hovedinnhold -->
+    <div class="container" style="padding: 20px; max-width: 900px; margin: 0 auto;">
+        <h1 style="text-align: center; color: #5d4037; font-size: 3em; margin-bottom: 10px;">Foxcraft</h1>
+        <h2 style="text-align: center; color: #795548; font-size: 2em; margin-top: 0;">Minecraft Server</h2>
+        <hr style="border: 1px solid #d7ccc8; margin: 20px 0;">
+
+        <!-- Ranger -->
+        <section id="ranks">
+            <h2 style="text-align: center; color: #6d4c41;">Våre Ranger</h2>
+            <div class="ranks" style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 20px;">
+                <div class="rank" style="background-color: #d7ccc8; border: 1px solid #8d6e63; border-radius: 5px; margin: 10px; padding: 20px; width: 200px; text-align: center;">
+                    <h3 style="color: #5d4037;">Gull</h3>
+                    <p>Pris: 100 kr</p>
+                </div>
+                <div class="rank" style="background-color: #d7ccc8; border: 1px solid #8d6e63; border-radius: 5px; margin: 10px; padding: 20px; width: 200px; text-align: center;">
+                    <h3 style="color: #5d4037;">Diamant</h3>
+                    <p>Pris: 200 kr</p>
+                </div>
+                <div class="rank" style="background-color: #d7ccc8; border: 1px solid #8d6e63; border-radius: 5px; margin: 10px; padding: 20px; width: 200px; text-align: center;">
+                    <h3 style="color: #5d4037;">VIP</h3>
+                    <p>Pris: 300 kr</p>
+                </div>
+                <div class="rank" style="background-color: #d7ccc8; border: 1px solid #8d6e63; border-radius: 5px; margin: 10px; padding: 20px; width: 200px; text-align: center;">
+                    <h3 style="color: #5d4037;">VIP+</h3>
+                    <p>Pris: 400 kr</p>
+                </div>
+                <div class="rank" style="background-color: #d7ccc8; border: 1px solid #8d6e63; border-radius: 5px; margin: 10px; padding: 20px; width: 200px; text-align: center;">
+                    <h3 style="color: #5d4037;">VIP++</h3>
+                    <p>Pris: 500 kr</p>
+                </div>
+                <div class="rank" style="background-color: #d7ccc8; border: 1px solid #8d6e63; border-radius: 5px; margin: 10px; padding: 20px; width: 200px; text-align: center;">
+                    <h3 style="color: #5d4037;">Rikingen</h3>
+                    <p>Pris: 1000 kr</p>
+                </div>
+            </div>
+        </section>
+
+        <hr style="border: 1px solid #d7ccc8; margin: 40px 0;">
+
+        <!-- Kontakt -->
+        <section id="contact">
+            <h2 style="text-align: center; color: #d7ccc8;">Kontakt Oss</h2>
+              <form align="center" action="https://formspree.io/f/mdkojrrb" method="POST" style="width: 90%; max-width: 500px; margin: 0 auto; text-align: center;">
+        <input type="text" name="dc navn" placeholder="Ditt discord navn" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #d7ccc8; border-radius: 5px;"><br>
+        <input type="text" name="hjelp?" placeholder="trenger du hjelp " required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #d7ccc8; border-radius: 5px;"><br>
+        <input type="text" name="name" placeholder="Ditt mc username" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #d7ccc8; border-radius: 5px;"><br>
+        <textarea name="message" placeholder="Din melding" rows="5" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #d7ccc8; border-radius: 5px;"></textarea><br>
+        <button type="submit" style="background-color: #d7ccc8; color: white; border: none; cursor: pointer; font-size: 1em; padding: 10px 20px; border-radius: 5px;">
+            Send Melding
+        </button>
+    </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; background-color: #6d4c41; color: white; padding: 10px; margin-top: 20px;">
+        <p style="margin: 5px;">Foxcraft © 2024</p>
+    </footer>
+</body>
+</html>
